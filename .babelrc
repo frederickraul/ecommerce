@@ -1,6 +1,12 @@
 {
-    "Presets": ["@babel/preset-react"],
-    "plugins": [
-        ["@babel/transform-runtime"]
+    "presets": [
+        [
+            "@babel/preset-react",
+            {
+                "targets":{
+                    "node": true
+                }
+            }
+        ]
     ]
 }
